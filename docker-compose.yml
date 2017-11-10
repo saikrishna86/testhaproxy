@@ -4,9 +4,9 @@ services:
   awesome:
    image: awesome
    ports:
-     - 8082
+     - 8080
    environment:
-     - SERVICE_PORTS=8082
+     - SERVICE_PORTS=8080
    deploy:
      replicas: 10
      update_config:
@@ -28,7 +28,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - 80:82
+      - 80:80
     networks:
       - web
     deploy:
