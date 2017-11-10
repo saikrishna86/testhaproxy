@@ -1,4 +1,4 @@
-M node
+FROM node
 RUN mkdir -p /usr/src/app
 COPY index.js /usr/src/app
 EXPOSE 8080
